@@ -1,0 +1,533 @@
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <!-- <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    /> -->
+    <!-- <link type="text/css" rel="stylesheet" href="css/main.css" /> -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Title of the webpage -->
+    <title>#GCPCrashCourse at DSC RJIT</title>
+
+    <!-- Favicon linking -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/favicons/site.webmanifest" />
+
+    <!-- Linking Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Linking CSS Files -->
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- Linking JS Files -->
+    <script src="js/index.js"></script>
+
+    <!-- Adding PWA Capabilities -->
+    <link rel="manifest" href="manifest.json" />
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./sw.js")
+          .then(function() {
+            console.log("Service Worker Registered");
+          })
+          .catch(() => {
+            console.log("There was error registering service worker");
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Tint -->
+    <div class="tint"></div>
+
+    <!-- Popup Modals for Tracks -->
+    <div class="modal">
+      <!-- Modal Top bar with close icon -->
+      <div class="modal-top-bar">
+        <div id="close-modal">Close</div>
+      </div>
+
+      <!-- Modal Data -->
+      <div class="modal-main">
+        <!-- Application Modal -->
+        <div class="modal-main-app">
+          <h1>App Track Quests</h1>
+
+          <a href="https://bit.ly/dsc-rjit-gcc-app" target="_blank">
+            <div class="enroll-button">Enroll Now</div>
+          </a>
+
+          <h3>
+            <i>Remember to use the same account you used to enroll</i>
+          </h3>
+
+          <p>
+            1. Baseline: Deploy & Develop
+            <a href="https://www.qwiklabs.com/quests/37">Click to start</a>
+          </p>
+
+          <p>
+            2. Website and Web Applications
+            <a href="https://www.qwiklabs.com/quests/39">Click to start</a>
+          </p>
+
+          <p>
+            3. Deploying Applications
+            <a href="https://www.qwiklabs.com/quests/26">Click to start</a>
+          </p>
+
+          <p>
+            4. Cloud Development
+            <a href="https://www.qwiklabs.com/quests/67">Click to start</a>
+          </p>
+
+          <p>
+            5. Exploring API’s
+            <a href="https://www.qwiklabs.com/quests/54">Click to start</a>
+          </p>
+
+          <h3>
+            <i
+              >Only after all 5 quests are complete is the track considered
+              completed.</i
+            >
+          </h3>
+        </div>
+
+        <!-- Machine Learning Modal -->
+        <div class="modal-main-ml">
+          <h1>Machine Learning Track Quests</h1>
+
+          <a href="https://bit.ly/dsc-rjit-gcc-data" target="_blank">
+            <div class="enroll-button">Enroll Now</div>
+          </a>
+
+          <h3>
+            <i>Remember to use the same account you used to enroll</i>
+          </h3>
+
+          <p>
+            1. Baseline: Data, ML, AI
+            <a href="https://google.qwiklabs.com/quests/34">Click to start</a>
+          </p>
+
+          <p>
+            2. Intro to ML: Image processing<a
+              href="https://www.qwiklabs.com/quests/82"
+              >Click to start</a
+            >
+          </p>
+
+          <p>
+            3. BigQuery for Machine Learning<a
+              href="https://www.qwiklabs.com/quests/71"
+              >Click to start</a
+            >
+          </p>
+
+          <p>
+            4. Intermediate ML: Tensorflow on GCP<a
+              href="https://www.qwiklabs.com/quests/83"
+              >Click to start</a
+            >
+          </p>
+
+          <p>
+            5. Machine Learning API’s<a
+              href="https://www.qwiklabs.com/quests/32"
+              >Click to start</a
+            >
+          </p>
+
+          <h3>
+            <i
+              >Only after all 5 quests are complete is the track considered
+              completed.</i
+            >
+          </h3>
+        </div>
+
+        <!-- Data Modal -->
+        <div class="modal-main-data">
+          <h1>Data Track Quests</h1>
+
+          <a href="https://bit.ly/dsc-rjit-gcc-data" target="_blank">
+            <div class="enroll-button">Enroll Now</div>
+          </a>
+
+          <h3>
+            <i>Remember to use the same account you used to enroll</i>
+          </h3>
+
+          <p>
+            1. Baseline: Data, ML, AI
+            <a href="https://google.qwiklabs.com/quests/34">Click to start</a>
+          </p>
+
+          <p>
+            2. BigQuery for Data Analysis<a
+              href="https://www.qwiklabs.com/quests/55"
+              >Click to start</a
+            >
+          </p>
+
+          <p>
+            3. Scientific Data Processing<a
+              href="https://google.qwiklabs.com/quests/28"
+              >Click to start</a
+            >
+          </p>
+
+          <p>
+            4. Data engineering
+            <a href="https://www.qwiklabs.com/quests/67">Click to start</a>
+          </p>
+
+          <p>
+            5. Data Science on Google Cloud Platform
+            <a href="https://www.qwiklabs.com/quests/43">Click to start</a>
+          </p>
+
+          <h3>
+            <i
+              >Only after all 5 quests are complete is the track considered
+              completed.</i
+            >
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing section -->
+    <div class="main">
+      <div class="main-content-holder">
+        <!-- Heading -->
+        <h1>#GCPCrashCourse</h1>
+
+        <!-- DSC Logo -->
+        <div class="dsc-logo"></div>
+
+        <!-- Know More Button -->
+        <div class="know-more-button">Know More</div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+
+    <div class="main-about">
+      <!-- About Section -->
+      <div style="padding-bottom: 40px;">
+        <!-- About Section Heading -->
+        <h1>About #GCPCrashCourse</h1>
+
+        <!-- About Section Paragraph -->
+        <p>
+          Ever thought of learning about Google Cloud Platform? We've got you
+          covered. DSC RJIT in collaboration with Developer Student Clubs and
+          Qwiklabs brings to you #GCPCrashCourse, the best way to get started
+          with Google Cloud Platform.
+        </p>
+      </div>
+
+      <!-- Tracks Section -->
+      <div style="padding-bottom: 60px;">
+        <!-- Tracks Section Heading -->
+        <h1>We have three exciting tracks for you</h1>
+
+        <!-- Tracks Section Pargraph -->
+        <p>Click on a track to get enrolled in it:</p>
+
+        <!-- Tracks Section Icons -->
+        <div class="main-about-icon">
+          <div class="icon-holder">
+            <div class="icon data"></div>
+            <div class="icon-text">Data Science</div>
+          </div>
+
+          <div class="icon-holder">
+            <div class="icon android"></div>
+            <div class="icon-text">App Development</div>
+          </div>
+
+          <div class="icon-holder">
+            <div class="icon ml"></div>
+            <div class="icon-text">Machine Learning</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rewards section -->
+      <div style="padding-bottom: 60px;">
+        <!-- Rewards Section Heading -->
+        <h1>Nothing's fun without rewards</h1>
+
+        <!-- Rewards Section Pargraph -->
+        <p>
+          Any one who completes at least one Track in this month is eligible for
+          Goodies
+        </p>
+
+        <!-- Rewards Section Icons -->
+        <div class="main-about-icon">
+          <div class="icon-holder">
+            <div class="icon hoodie"></div>
+            <div class="icon-text">Google Hoodies</div>
+          </div>
+
+          <div class="icon-holder">
+            <div class="icon pen"></div>
+            <div class="icon-text">Schwags</div>
+          </div>
+
+          <div class="icon-holder">
+            <div class="icon certificate"></div>
+            <div class="icon-text">Certification</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Steps section -->
+      <div style="padding-bottom: 60px;">
+        <!-- Steps Section Heading -->
+        <h1>Three Simple Rules</h1>
+
+        <!-- Steps Section Pargraph -->
+        <p>Follow these three simple rules and you're golden:</p>
+
+        <!-- Steps Section Icons -->
+        <div class="main-about-icon">
+          <div class="icon-holder-two">
+            <div class="icon-two step-one"></div>
+            <div class="icon-text-two">Enroll in any mentioned above track</div>
+          </div>
+
+          <div class="icon-holder-two">
+            <div class="icon-two step-two"></div>
+            <div class="icon-text-two">
+              Complete at least 1 track before 31st October (9 AM)
+            </div>
+          </div>
+
+          <div class="icon-holder-two">
+            <div class="icon-two step-three"></div>
+            <div class="icon-text-two">
+              After completing the track, contact any member of DSC RJIT TEAM to
+              report your progress, let us know at our
+              <a href="https://twitter.com/DscRjit" target="_blank">twitter</a>
+              or
+              <a href="https://instagram.com/dscrjit" target="_blank"
+                >instagram</a
+              >
+              and receive goodies!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1>
+          <b>For Any Query, Contact:</b>
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="row valign-wrapper col s5">
+              <br />
+              <img src="images/ayush.png" class="circle responsive-img" />
+              <span class="card-title"></span>
+            </div>
+            <div class="col s4">
+              <p>
+                <b>Ayush Sharma</b>
+                DSC Lead
+              </p>
+              <a
+                target="_blank"
+                href="http://twitter.com/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+
+              <a
+                target="_blank"
+                href="http://github.com/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                target="_blank"
+                href="http://linkedin.com/in/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="row valign-wrapper col s5">
+              <br />
+              <img src="images/ravi.png" class="circle responsive-img" />
+              <span class="card-title"></span>
+            </div>
+            <div class="col s4">
+              <p>
+                <b>Ravi Gupta</b>
+                Techinal Head
+              </p>
+              <a
+                target="_blank"
+                href="http://twitter.com/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+
+              <a
+                target="_blank"
+                href="http://github.com/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                target="_blank"
+                href="http://linkedin.com/in/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="row valign-wrapper col s5">
+              <br />
+              <img src="images/haphus.png" class="circle responsive-img" />
+              <span class="card-title"></span>
+            </div>
+            <div class="col s4">
+              <p>
+                <b>Parag Gaikwad</b>
+                Designing Head
+              </p>
+              <a
+                target="_blank"
+                href="http://twitter.com/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+
+              <a
+                target="_blank"
+                href="http://github.com/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                target="_blank"
+                href="http://linkedin.com/in/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="row valign-wrapper col s5">
+              <br />
+              <img src="images/krkkhan.png" class="circle responsive-img" />
+              <span class="card-title"></span>
+            </div>
+            <div class="col s4">
+              <p>
+                <b>Krishna Raj</b>
+                Management Team
+              </p>
+              <a
+                target="_blank"
+                href="http://twitter.com/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+
+              <a
+                target="_blank"
+                href="http://github.com/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                target="_blank"
+                href="http://linkedin.com/in/ayushs136"
+                class="p-1 text-dark"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+</html>

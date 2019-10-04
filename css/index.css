@@ -49,6 +49,14 @@ body {
   background-size: 100% auto;
   margin: auto auto;
 }
+.gd-logo {
+  height: 20%;
+  width: 40%;
+  background: url("../images/gd.png")
+    center center no-repeat;
+  background-size: 100% auto;
+  margin: auto auto;
+}
 
 .know-more-button {
   background: #4d95fb;

@@ -108,6 +108,14 @@ body {
   position: absolute;
   top: 100vh;
 }
+.main-agenda {
+  width: 100%;
+  height: auto;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  position: absolute;
+  top: 100vh;
+}
 
 .main-about h1 {
   text-align: center;

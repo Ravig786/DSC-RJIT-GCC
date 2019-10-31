@@ -1,2 +1,2 @@
 # #GCPCrashCourse
-Just for fun and learn
+Landing page for #GCPCrashCourse
